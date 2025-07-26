@@ -1,7 +1,7 @@
 import sys
 import os
 from loader import get_loader
-from models.Net import MFS_net
+from models.Net import LSDF_Unet
 
 sys.path.append(os.getcwd())
 from utils.loss_function import BceDiceLoss
@@ -133,7 +133,7 @@ def main():
     #record log
     logger = get_logger('train', os.path.join(os.getcwd(),args.log,args.datasets))
     #Network
-    model=MFS_net(out_channels=args.out_channels,kernel_list=args.kernel_list)
+    model=LSDF_Unet(out_channels=args.out_channels,kernel_list=args.kernel_list)
     model = model.cuda()
     #loss function
     criterion=BceDiceLoss()
