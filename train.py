@@ -70,7 +70,9 @@ def parse_args():
     parser.add_argument(
         "--out_channels",
         type=list,
-        default=[10,20,30,40,50],
+        default=[64, 128, 256, 384, 512],  
+        # default=[32, 64, 128, 256, 384], 
+        # default=[48, 96, 192, 320, 448],  
         help="out_channels",
     )
     parser.add_argument(
