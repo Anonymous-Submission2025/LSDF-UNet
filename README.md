@@ -21,10 +21,10 @@ Major challenges in medical image segmentation.
 ##  Overview
 
 <div align="center">
-<img width="800" alt="image" src="asserts/LSDFD-UNet.png?raw=true">
+<img width="800" alt="image" src="asserts/LSDF-UNet.png?raw=true">
 </div>
 
-The overall architecture of MFS-Net.
+The overall architecture of LSDF-UNet.
 
 ##  TODO
 
@@ -35,8 +35,8 @@ The overall architecture of MFS-Net.
 ### 1. Install Environment
 
 ```
-conda create -n MFS-Net python=3.10
-conda activate MFS-Net
+conda create -n LSDF-UNet python=3.10
+conda activate LSDF-UNet
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install packaging
 pip install timm
@@ -48,12 +48,12 @@ pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs 
 
 ### 2. Prepare Datasets
 
-- Download datasets: ISIC2018 from this [link](https://challenge.isic-archive.com/data/#2018), Kvasir from this[link](https://link.zhihu.com/?target=https%3A//datasets.simula.no/downloads/kvasir-seg.zip), COVID-19 from this [link](https://drive.usercontent.google.com/download?id=1FHx0Cqkq9iYjEMN3Ldm9FnZ4Vr1u3p-j&export=download&authuser=0), and Moun-Seg from this [link](https://www.kaggle.com/datasets/tuanledinh/monuseg2018).
+- Download datasets: ISIC2018 from this [link](https://challenge.isic-archive.com/data/#2018), Kvasir from this[link](https://link.zhihu.com/?target=https%3A//datasets.simula.no/downloads/kvasir-seg.zip), and Moun-Seg from this [link](https://www.kaggle.com/datasets/tuanledinh/monuseg2018).
 
 
 - Folder organization: put datasets into ./data/datasets folder.
 
-### 3. Train the MFS-Net
+### 3. Train the LSDF-UNet
 
 ```
 python train.py --datasets ISIC2018
@@ -62,7 +62,7 @@ pre-training file is saved to ./checkpoints/ISIC2018/best.pth
 concrete information see train.py, please
 ```
 
-### 3. Test the MFS-Net
+### 3. Test the LSDF-UNet
 
 ```
 python test.py --datasets ISIC2018
@@ -79,7 +79,7 @@ concrete information see test.py, please
 </div>
 
 <div align="center">
-    Comparison with other methods on the ISIC2018, Kvasir, COVID-19 and Moun-Seg datasets.
+    Comparison with other methods on the ISIC2018, Kvasir and Moun-Seg datasets.
 </div>
 
 
@@ -92,9 +92,9 @@ concrete information see test.py, please
 
 
 <div align="center">
-   Visualization comparing MFS-Net with other methods. (a) Input images. (b) Ground truth. (c) MFS-Net(Ours). (d) U-Net. (e) UCTransNet. (f) MLWNet. (g) UltraLight-VMUNet. (h) MFMSA. (i) VPTTA. (j) EMCAD. (k) MambaU-Lite. (l) VM-UNet. (m) H-vmunet. Green lines denote the boundaries of the ground truth.
+   Visualization comparing LSDF-UNet with other methods. (a) Input images. (b) Ground truth. (c) LSDF-UNet(Ours). (d) U-Net. (e) UCTransNet. (f) MLWNet. (g) UltraLight-VMUNet. (h) MFMSA. (i) VPTTA. (j) EMCAD. (k) MambaU-Lite. (l) VM-UNet. (m) H-vmunet. Green lines denote the boundaries of the ground truth.
 </div>
 
 ##  License
 
-The content of this project itself is licensed under [LICENSE](https://github.com/Anonymous-Submission2025/NetWork/MFS-Net/blob/main/LICENSE).
+The content of this project itself is licensed under [LICENSE](https://github.com/Anonymous-Submission2025/NetWork/LSDF-UNet/blob/main/LICENSE).
