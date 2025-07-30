@@ -21,7 +21,7 @@ Major challenges in medical image segmentation.
 ##  Overview
 
 <div align="center">
-<img width="800" alt="image" src="asserts/MFS-Net.png?raw=true">
+<img width="800" alt="image" src="asserts/LSDFD-UNet.png?raw=true">
 </div>
 
 The overall architecture of MFS-Net.
