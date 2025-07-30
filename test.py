@@ -1,7 +1,7 @@
 import sys
 import os
 from loader import get_loader
-from models.Net import MFS_net
+from models.Net import LSDF-UNet
 
 sys.path.append(os.getcwd())
 from utils.loss_function import BceDiceLoss
