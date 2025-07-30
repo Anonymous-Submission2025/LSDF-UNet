@@ -1,14 +1,14 @@
 <div align="center">
-<h1> MFS-Net: Medical Image Segmentation via Frequency Domain Dual-Size Patch Partitioning and Multi-Scale Deformable Learning </h1>
+<h1> LSDF-UNet: Lightweight Large-Small Network with Dual-Size Patch Frequency Aware for Medical Image Segmentation </h1>
 </div>
 
 ##  News
 
-- [2025.5.21] Training and inference code released
+- [2025.8.1] Training and inference code released
 
 ##  Abstract
 
-In medical images, the ubiquitous co-occurrence phenomenon makes it difficult for the model to effectively distinguish target features from interfering background information. At the same time, the problems of blurred edge contours and irregular shapes further affect the edge clarity of the segmentation results. To address the above challenges, this paper proposes a new medical image segmentation framework MFS-Net. This paper designs a DPFA module, which performs preliminary spatial frequency decomposition through a frequency domain perception module and uses a dual-size patch partitioning strategy to further enhance the perception of local details and global structures. Subsequently, with the help of FFT and a learnable quantization matrix W, we can adaptively screen and amplify key frequency components to suppress noise interference. In addition, this paper uses a multi-scale deformable learning mechanism to dynamically adjust the sampling grid, so as to robustly extract multi-scale edge features in edge fuzzy areas. Through extensive experiments on four benchmark medical image datasets, it is demonstrated that our method achieves state-of-the-art performance and effectiveness.
+Efficient and effective perception and aggregation mechanisms are crucial in medical image segmentation, especially in scenarios with limited computing resources. However, existing methods are usually accompanied by high computational costs. At the same time, the ubiquitous co-occurrence phenomenon makes it difficult for the model to effectively distinguish target features from interfering background information. To address the above problems, this paper proposes an LSDF-UNet segmentation model. First, a "looking at the big-focusing on the small" dynamic fusion mechanism is adopted to achieve lightweight and efficient feature enhancement under linear complexity. Secondly, a dual-size patch frequency aware module (DPFA) is designed, combined with a frequency-aware block (FAB) and a dual-scale patch partitioning strategy to separate high-frequency details and low-frequency contours in the frequency domain, suppress co-occurrence noise, and significantly improve boundary discrimination. Through extensive experiments on three benchmark medical image datasets, it is demonstrated that our method achieves state-of-the-art performance and effectiveness.
 
 ##  Introduction
 
