@@ -72,16 +72,6 @@ concrete information see test.py, please
 ```
 
 
-##  Quantitative comparison
-
-<div align="center">
-<img width="800" alt="image" src="asserts/compara.jpg?raw=true">
-</div>
-
-<div align="center">
-    Comparison with other methods on the ISIC2018, Kvasir and Moun-Seg datasets.
-</div>
-
 
 
 ##  License
