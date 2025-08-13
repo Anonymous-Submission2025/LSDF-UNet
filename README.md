@@ -83,17 +83,6 @@ concrete information see test.py, please
 </div>
 
 
-##  Visualization
-
-<div align="center">
-<img width="800" alt="image" src="asserts/Visualization.jpg?raw=true">
-</div>
-
-
-
-<div align="center">
-   Visualization comparing LSDF-UNet with other methods. (a) Input images. (b) Ground truth. (c) LSDF-UNet(Ours). (d) U-Net. (e) UCTransNet. (f) MLWNet. (g) UltraLight-VMUNet. (h) MFMSA. (i) VPTTA. (j) EMCAD. (k) MambaU-Lite. (l) VM-UNet. (m) H-vmunet. Green lines denote the boundaries of the ground truth.
-</div>
 
 ##  License
 
