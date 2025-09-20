@@ -10,13 +10,6 @@
 
 Efficient and effective perception and aggregation mechanisms are crucial in medical image segmentation, especially in scenarios with limited computing resources. However, existing methods are usually accompanied by high computational costs. At the same time, the ubiquitous co-occurrence phenomenon makes it difficult for the model to effectively distinguish target features from interfering background information. To address the above problems, this paper proposes an LSDF-UNet segmentation model. First, a "looking at the big-focusing on the small" dynamic fusion mechanism is adopted to achieve lightweight and efficient feature enhancement under linear complexity. Secondly, a dual-size patch frequency aware module (DPFA) is designed, combined with a frequency-aware block (FAB) and a dual-scale patch partitioning strategy to separate high-frequency details and low-frequency contours in the frequency domain, suppress co-occurrence noise, and significantly improve boundary discrimination. Through extensive experiments on three benchmark medical image datasets, it is demonstrated that our method achieves state-of-the-art performance and effectiveness.
 
-##  Introduction
-
-<div align="center">
-    <img width="800" alt="image" src="asserts/challen_.png?raw=true">
-</div>
-
-Major challenges in medical image segmentation.
 
 ##  Overview
 
