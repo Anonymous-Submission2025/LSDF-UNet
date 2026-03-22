@@ -2,9 +2,10 @@
 <h1> LSDF-UNet: Lightweight Large-Small Network with Dual-Size Patch Frequency Aware for Medical Image Segmentation </h1>
 </div>
 
-##  News
+Official Pytorch code for [LSDF-UNet: Lightweight Large-Small Network with Dual-Size Patch Frequency Aware for Medical Image Segmentation, BIBM'25](https://ieeexplore.ieee.org/document/10230609)
 
-- [2025.8.1] Training and inference code released
+[Paper](https://ieeexplore.ieee.org/document/11356454) | [Code](https://github.com/Anonymous-Submission2025/LSDF-UNet)
+
 
 ##  Abstract
 
